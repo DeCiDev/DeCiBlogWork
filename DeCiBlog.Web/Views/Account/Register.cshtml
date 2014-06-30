@@ -1,0 +1,58 @@
+﻿@model DeCiBlog.Web.Model.RegisterModel
+@{
+    ViewBag.Title = "Registrierung";
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+    <div class="form-horizontal">
+        <fieldset>
+            <!-- Form Name -->
+            <legend>Neues Benutzerkonto anlegen</legend>
+            <!-- Username -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for=@Html.NameFor(m => m.UserName)>@Html.DisplayNameFor(m => m.UserName)</label>
+                <div class="col-md-4">
+                    <input id=@Html.NameFor(m => m.UserName) name=@Html.NameFor(m => m.UserName) type="text" placeholder=@Html.DisplayNameFor(m => m.UserName) class="form-control input-sm" required="">
+                </div>
+            </div>
+            <!-- EMail Address -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for=@Html.NameFor(m => m.Email)>@Html.DisplayNameFor(m => m.Email)</label>
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <span class="input-group-addon">@@</span>
+                        <input id=@Html.NameFor(m => m.Email) name=@Html.NameFor(m => m.Email) class="form-control input-sm" placeholder=@Html.DisplayNameFor(m => m.Email) type="text" required="">
+                    </div>
+                </div>
+            </div>
+            <!-- Password input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for=@Html.NameFor(m => m.Password)>Passwort</label>
+                <div class="col-md-4">
+                    <input id=@Html.NameFor(m => m.Password) name=@Html.NameFor(m => m.Password) type="password" placeholder=@Html.DisplayNameFor(m => m.Password) class="form-control input-sm" required="">
+
+                </div>
+            </div>
+            <!-- Confirm Password-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for=@Html.NameFor(m => m.ConfirmPassword)>@Html.DisplayNameFor(m => m.ConfirmPassword)</label>
+                <div class="col-md-4">
+                    <input id=@Html.NameFor(m => m.ConfirmPassword) name=@Html.NameFor(m => m.ConfirmPassword) type="password" placeholder=@Html.DisplayNameFor(m => m.ConfirmPassword) class="form-control input-sm" required="">
+
+                </div>
+            </div>
+            <!-- Button -->
+            <div class="form-group">
+                <div class="col-md-offset-4">
+                    <input type="submit" id="register" name="register" class="btn btn-primary" value="Registrieren" />
+                </div>
+            </div>
+        </fieldset>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

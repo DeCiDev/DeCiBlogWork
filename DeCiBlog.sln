@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeCiBlog.Data", "DeCiBlog.Data\DeCiBlog.Data.csproj", "{310805A7-C2DC-42B8-8EA3-DA17A4257034}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeCiBlog.Model", "DeCiBlog.Model\DeCiBlog.Model.csproj", "{09D37206-F7EF-4B90-B3B7-B267E7A72ADE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeCiBlog.Web", "DeCiBlog.Web\DeCiBlog.Web.csproj", "{A35C6C8A-F467-4141-AE47-9BE2F12EF4B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{108D01A3-A2BD-41C2-AE4D-CE1E0682EACE}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeCiBlog.Data.Contracts", "DeCiBlog.Data.Contracts\DeCiBlog.Data.Contracts.csproj", "{7D19B4F1-51CF-427C-BC95-E962989003F0}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://decidev.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DeCiBlog.Data.Contracts\\DeCiBlog.Data.Contracts.csproj
+		SccProjectName1 = DeCiBlog.Data.Contracts
+		SccLocalPath1 = DeCiBlog.Data.Contracts
+		SccProjectUniqueName2 = DeCiBlog.Data\\DeCiBlog.Data.csproj
+		SccProjectName2 = DeCiBlog.Data
+		SccLocalPath2 = DeCiBlog.Data
+		SccProjectUniqueName3 = DeCiBlog.Model\\DeCiBlog.Model.csproj
+		SccProjectName3 = DeCiBlog.Model
+		SccLocalPath3 = DeCiBlog.Model
+		SccProjectUniqueName4 = DeCiBlog.Web\\DeCiBlog.Web.csproj
+		SccProjectName4 = DeCiBlog.Web
+		SccLocalPath4 = DeCiBlog.Web
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{310805A7-C2DC-42B8-8EA3-DA17A4257034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{310805A7-C2DC-42B8-8EA3-DA17A4257034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{310805A7-C2DC-42B8-8EA3-DA17A4257034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{310805A7-C2DC-42B8-8EA3-DA17A4257034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09D37206-F7EF-4B90-B3B7-B267E7A72ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D37206-F7EF-4B90-B3B7-B267E7A72ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D37206-F7EF-4B90-B3B7-B267E7A72ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D37206-F7EF-4B90-B3B7-B267E7A72ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A35C6C8A-F467-4141-AE47-9BE2F12EF4B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A35C6C8A-F467-4141-AE47-9BE2F12EF4B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A35C6C8A-F467-4141-AE47-9BE2F12EF4B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A35C6C8A-F467-4141-AE47-9BE2F12EF4B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D19B4F1-51CF-427C-BC95-E962989003F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D19B4F1-51CF-427C-BC95-E962989003F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D19B4F1-51CF-427C-BC95-E962989003F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D19B4F1-51CF-427C-BC95-E962989003F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

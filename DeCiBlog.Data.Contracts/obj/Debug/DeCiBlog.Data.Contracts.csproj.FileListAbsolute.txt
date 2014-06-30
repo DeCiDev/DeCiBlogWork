@@ -1,0 +1,14 @@
+D:\Repositories\Private\New\DeCiBlog\DeCiBlog.Data.Contracts\bin\Debug\DeCiBlog.Data.Contracts.dll
+D:\Repositories\Private\New\DeCiBlog\DeCiBlog.Data.Contracts\bin\Debug\DeCiBlog.Data.Contracts.pdb
+D:\Repositories\Private\New\DeCiBlog\DeCiBlog.Data.Contracts\bin\Debug\DeCiBlog.Model.dll
+D:\Repositories\Private\New\DeCiBlog\DeCiBlog.Data.Contracts\bin\Debug\DeCiBlog.Model.pdb
+D:\Repositories\Private\New\DeCiBlog\DeCiBlog.Data.Contracts\obj\Debug\DeCiBlog.Data.Contracts.csprojResolveAssemblyReference.cache
+D:\Repositories\Private\New\DeCiBlog\DeCiBlog.Data.Contracts\obj\Debug\DeCiBlog.Data.Contracts.dll
+D:\Repositories\Private\New\DeCiBlog\DeCiBlog.Data.Contracts\obj\Debug\DeCiBlog.Data.Contracts.pdb
+D:\Repositories\Private\DeCiBlog\DeCiBlog\DeCiBlog.Data.Contracts\bin\Debug\DeCiBlog.Data.Contracts.dll
+D:\Repositories\Private\DeCiBlog\DeCiBlog\DeCiBlog.Data.Contracts\bin\Debug\DeCiBlog.Data.Contracts.pdb
+D:\Repositories\Private\DeCiBlog\DeCiBlog\DeCiBlog.Data.Contracts\bin\Debug\DeCiBlog.Model.dll
+D:\Repositories\Private\DeCiBlog\DeCiBlog\DeCiBlog.Data.Contracts\bin\Debug\DeCiBlog.Model.pdb
+D:\Repositories\Private\DeCiBlog\DeCiBlog\DeCiBlog.Data.Contracts\obj\Debug\DeCiBlog.Data.Contracts.csprojResolveAssemblyReference.cache
+D:\Repositories\Private\DeCiBlog\DeCiBlog\DeCiBlog.Data.Contracts\obj\Debug\DeCiBlog.Data.Contracts.dll
+D:\Repositories\Private\DeCiBlog\DeCiBlog\DeCiBlog.Data.Contracts\obj\Debug\DeCiBlog.Data.Contracts.pdb

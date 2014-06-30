@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <!-- Title here -->
+    <title>@ViewBag.Title - DeCi Blog</title>
+    <!-- Description, Keywords and Author -->
+    <meta name="description" content=@ViewBag.Settings.Description>
+    <meta name="keywords" content=@ViewBag.Settings.Keywords>
+    <meta name="author" content=@ViewBag.Settings.Author>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    @Styles.Render("~/Content/css")
+
+    <!-- All JavaScript at the bottom, except this Modernizr build.
+           Modernizr enables HTML5 elements & feature detects for optimal performance.
+    @Scripts.Render("~/bundles/modernizr")    
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/Content/Template/img/favicon/favicon.png">
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- Fixed Bar -->
+    <div class="fixedbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo">
+                        <div class="pull-left">
+                            <!-- Logo with font awesome icon. Replace it with your logo. Replace # with your site link -->
+                            <h1><a href="#"><i class="fa fa-camera-retro"></i> DeCi-Blog</a></h1>
+                        </div>
+                        <div class="navi">
+                            <!-- Navigation Starts Here -->
+                            <div class="pull-left">
+                                <div id="ddtopmenubar" class="mattblackmenu">
+                                    <!-- Main navigation -->
+                                    <ul>
+                                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                                    </ul>
+                                </div>
+                            </div><!--/ Navigation Ends Here -->
+                        </div>
+                    </div>
+
+                    <div class="share">
+                        <div class="pull-right">
+                            <!-- Share it link for slider -->
+                            <!-- <p><a href="#" class="open"><span class="hidden-xs">Share it <i class="fa fa-share"></i></span></a></p> -->
+                            <section id="login">
+                                @Html.Partial("_LoginPartial")
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fixed Bar End -->
+    <!-- Main content -->
+
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 hidden-lg">
+                    <div class="padd"><div class="navis"></div></div>
+                </div>
+                <div class="visible-lg">
+                    <div class="col-md-3">
+                        <!-- Sidebar Starts Here -->
+                        <div class="padd sidebar">
+                            <!-- Each sidebar should be enclosed inside "widget class" -->
+                            <!-- 1st widget -->
+                            <!-- 2nd widget -->
+                            @Html.Partial("_History")
+                            <!-- 3nd widget -->
+                            @Html.Partial("_Categories")
+                            <!-- 4rd widget -->
+                            @Html.Partial("_BlogRoll")
+                        </div>
+                        <!-- Sidebar Ends Here -->
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="posts">
+                        @RenderBody()
+                    </div>
+                </div>
+                <div class="mobily hidden-lg">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Copyright information -->
+                    <div class="fpadd">Copyright &copy; 2014 - <a href="#">DeCi-Blog</a></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </footer>
+
+
+    <!-- Scroll to top -->
+    <span class="totop"><a href="#"><i class="fa fa-angle-up"></i></a></span>
+
+
+    <!-- JavaScript files -->
+    <!--
+      When bundling, load in this sequence:
+      1) shivs and jQuery
+      2) 3rd party libraries
+      3) require.js
+      4) my app libraries
+      5) main.js
+      -->
+    
+        @Scripts.Render(
+        "~/bundles/jquery",
+        "~/bundles/jsextlibs",
+        "/Scripts/lib/require.js",
+        "~/bundles/jsapplibs",
+        "/Scripts/main.js"
+    )
+    
+    @RenderSection("scripts", required: false)
+</body>
+</html>

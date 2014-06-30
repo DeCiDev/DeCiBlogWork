@@ -1,0 +1,14 @@
+﻿<section id="categories-view">
+    <div class="widget">
+        <h3>Kategorien</h3>
+        <div class="matter">
+            <ul data-bind="foreach:categories">
+                <li><a data-bind="attr: {href: '#/categories/' + id}">
+                        <span data-bind="text: name"></span>         
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,10 @@
+D:\Repositories\Private\New\DeCiBlog\DeCiBlog.Model\bin\Debug\DeCiBlog.Model.dll
+D:\Repositories\Private\New\DeCiBlog\DeCiBlog.Model\bin\Debug\DeCiBlog.Model.pdb
+D:\Repositories\Private\New\DeCiBlog\DeCiBlog.Model\obj\Debug\DeCiBlog.Model.csprojResolveAssemblyReference.cache
+D:\Repositories\Private\New\DeCiBlog\DeCiBlog.Model\obj\Debug\DeCiBlog.Model.dll
+D:\Repositories\Private\New\DeCiBlog\DeCiBlog.Model\obj\Debug\DeCiBlog.Model.pdb
+D:\Repositories\Private\DeCiBlog\DeCiBlog\DeCiBlog.Model\bin\Debug\DeCiBlog.Model.dll
+D:\Repositories\Private\DeCiBlog\DeCiBlog\DeCiBlog.Model\bin\Debug\DeCiBlog.Model.pdb
+D:\Repositories\Private\DeCiBlog\DeCiBlog\DeCiBlog.Model\obj\Debug\DeCiBlog.Model.csprojResolveAssemblyReference.cache
+D:\Repositories\Private\DeCiBlog\DeCiBlog\DeCiBlog.Model\obj\Debug\DeCiBlog.Model.dll
+D:\Repositories\Private\DeCiBlog\DeCiBlog\DeCiBlog.Model\obj\Debug\DeCiBlog.Model.pdb

@@ -1,0 +1,53 @@
+﻿@model DeCiBlog.Web.Model.LoginModel
+
+@{
+    ViewBag.Title = "Anmelden";
+}
+<section id="loginForm" class="form-horizontal">
+    @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        <fieldset>
+            <!-- Form Name -->
+            <legend>Benutzeranmeldung</legend>
+            <!-- Username input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="username">@Html.DisplayNameFor(m => m.UserName)</label>
+                <div class="col-md-4">
+                    <input id="username" name="username" type="text" placeholder=@Html.DisplayNameFor(m => m.UserName) class="form-control input-sm" required="">
+                </div>
+            </div>
+            <!-- Password input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="password">@Html.DisplayNameFor(m => m.Password)</label>
+                <div class="col-md-4">
+                    <input id="password" name="password" type="password" placeholder=@Html.DisplayNameFor(m => m.Password) class="form-control input-md" required="">
+                </div>
+            </div>
+            <!-- Rememberme Checkbox -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="checkboxes">Angemeldet bleiben</label>
+                <div class="col-md-4">
+                    <div class="checkbox">
+                        <input type="checkbox" name="checkboxes" id="checkboxes-0" value="0">
+                    </div>
+                </div>
+            </div>
+            <!-- Button -->
+            <div class="form-group">
+                <div class="col-md-offset-4">
+                    <input type="submit" id="login" name="login" class="btn btn-primary" value="Anmelden" />
+                </div>
+            </div>
+        </fieldset>
+
+        <p>
+            @Html.ActionLink("Registrieren", "Register") , falls Sie noch kein Benutzerkonto haben.
+        </p>
+    }
+</section>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

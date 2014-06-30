@@ -1,0 +1,31 @@
+﻿@model IEnumerable<DeCiBlog.Model.BlogEntry>
+@{
+    ViewBag.Title = ViewBag.Settings.SiteName ;
+}
+<section id="blogentries-view">
+    <div class="col-md-12">
+        <div>
+            <p class="lead">Zuletzt erzählt...</p>
+            <div>bisherige Einträge: <span data-bind="text:blogentries().length"></span></div>
+        </div>
+          
+        <!-- Externes Templatebinding von Konockout funktioniert leider bei mir noch nicht. Irgend etwas mache ich falsch...-->
+        <!-- Ich habe den Aufwand Clientseitiges Entitäten-Modell mit View-ViewModel-Model, Cache, Routing unsw. völlig unterschätzt!.-->
+        <!-- Nach der Beschreibung und Demos von John Papa hat es so einfach ausgesehen.-->
+        <!-- <section data-bind="template: {name: blogentryTemplate, foreach: blogentries}"></section> -->
+        
+        @foreach (var blogEntry in Model)
+        {
+            <div class="blogentry row">
+                <div class="title span10">
+                    @Html.ActionLink(blogEntry.Title, "Details", new {id = blogEntry.Id})
+                </div>
+                <div class="date span2">@blogEntry.CreationDate.ToString("dd.MM.yyyy HH:mm:ss")</div>
+                <div class="contents span12">@blogEntry.Text</div>
+            </div>
+
+        }
+
+    </div>
+</section>
+
